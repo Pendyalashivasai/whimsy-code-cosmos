@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+				magical: ['Comfortaa', 'Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +56,22 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				design: {
+					primary: 'hsl(var(--design-primary))',
+					secondary: 'hsl(var(--design-secondary))',
+					background: 'hsl(var(--design-background))',
+				},
+				dev: {
+					primary: 'hsl(var(--dev-primary))',
+					secondary: 'hsl(var(--dev-secondary))',
+					background: 'hsl(var(--dev-background))',
+					glow: 'hsl(var(--dev-glow))',
+				},
+				magic: {
+					star: 'hsl(var(--star-gold))',
+					pink: 'hsl(var(--magic-pink))',
+					blue: 'hsl(var(--magic-blue))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
